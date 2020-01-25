@@ -5,7 +5,7 @@ import { initialize, Endpoint } from '@muzilator/sdk'
 
 const init = async () => {
   const platform = await initialize()
-  await platform.loadLibrary('stockify-nalyzer', 'analyzer','secondary')
+  await platform.loadLibrary('stockify-analyzer', 'analyzer','secondary')
   await platform.loadLibrary('stockify-controller', 'controller', 'primary')
   await platform.loadLibrary('midi-synth', 'synth', 'secondary')
 
@@ -14,3 +14,4 @@ const init = async () => {
 }
 
 init()
+
